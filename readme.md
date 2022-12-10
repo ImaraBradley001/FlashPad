@@ -34,8 +34,7 @@ python src/main.py
 
 ## Authors
 
-Imara Bradley
-imarabradley2@gmail.com
+Imara Bradley -> imarabradley2@gmail.com
 
 ## License
 
