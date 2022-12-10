@@ -25,7 +25,7 @@ pip install requirements.txt
 * Or simply download the latest release binary
 
 ### Executing Flashpad
-* To run FlashPad, simply run the following command from the downloaded repository
+* To run FlashPad, simply run the following command from the downloaded repository.
 ```
 python src/main.py
 ```
@@ -37,5 +37,4 @@ Imara Bradley -> imarabradley2@gmail.com
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
+Check license.md for details.
