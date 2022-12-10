@@ -28,7 +28,7 @@ pip install requirements.txt
 ### Executing Flashpad
 * To run FlashPad, simply run the following command from the downloaded repository
 ```
-python main.py
+python src/main.py
 ```
 * Or simply run the downloaded binary FlashPad.exe 
 
