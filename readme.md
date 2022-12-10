@@ -4,7 +4,6 @@ A Simple Text Editor!
 
 ## Description
 FlashPad is a simple text editor that can be used to read and write to text files.
-Supported encodeings are ASCII, UTF-8, UTF-16 and UTF-32
 
 ## Getting Started
 
