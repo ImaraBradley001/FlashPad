@@ -6,7 +6,7 @@ A Simple Text Editor!
 FlashPad is a simple text editor that can be used to read and write to text files.
 
 ##Preview
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/ImaraBradley001/FlashPad/raw/master/preview/1.png)
 
 ## Getting Started
 
