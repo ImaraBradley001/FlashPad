@@ -1,0 +1,145 @@
+#: import utils kivy.utils
+<Button>:
+    background_normal:""
+<MDRaisedButton>:
+    markup: True
+
+
+<MainPage>:
+    GridLayout:
+        size: root.size
+        cols:1
+        rows:3
+        FloatLayout:
+            size_hint:None , None
+            size:root.width, "100dp"
+            canvas:
+                Color:
+                    rgba: utils.get_color_from_hex("#ADD8E6")
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            MDFlatButton:
+                size_hint: None, None
+                size:80, "10dp"
+                pos_hint:{"x":.02, "y":.15}
+                text:"open"
+                text_color:0,0,0,1
+                md_bg_color:utils.get_color_from_hex("#ADD8E6")
+                on_press: root.open_file()
+            MDFlatButton:
+                size_hint: None, None
+                size:80, "10dp"
+                pos_hint:{"x":.12, "y":.15}
+                text:"[i][b]save[/b][/i]"
+                text_color:0,0,0,1
+                md_bg_color:utils.get_color_from_hex("#ADD8E6")
+                on_press: root.save_file()
+            MDFlatButton:
+                size_hint: None, None
+                size:80, "10dp"
+                pos_hint:{"x":.22, "y":.15}
+                text:"close"
+                text_color:0,0,0,1
+                md_bg_color:utils.get_color_from_hex("#ADD8E6")
+                on_press: root.close_file()
+            MDFlatButton:
+                size_hint: None, None
+                size:80, "10dp"
+                pos_hint:{"x":.32, "y":.15}
+                text:"font size"
+                text_color:0,0,0,1
+                md_bg_color:utils.get_color_from_hex("#ADD8E6")
+                on_press: root.get_font_size()
+            MDFlatButton:
+                id:hex_button
+                size_hint: None, None
+                size:80, "10dp"
+                pos_hint:{"x":.42, "y":.15}
+                text:"hex"
+                text_color:0,0,0,1
+                md_bg_color:utils.get_color_from_hex("#ADD8E6")
+                on_press: root.string_to_hex()
+            MDFlatButton:
+                size_hint: None, None
+                size:80, "10dp"
+                pos_hint:{"x":.52, "y":.15}
+                text:"[b]settings[/b]"
+                text_color:0,0,0,1
+                md_bg_color:utils.get_color_from_hex("#ADD8E6")
+                on_press: root.goto_settings()
+            MDFlatButton:
+                size_hint: None, None
+                size:80, "10dp"
+                pos_hint:{"x":.62, "y":.15}
+                text:"help"
+                text_color:0,0,0,1
+                md_bg_color:utils.get_color_from_hex("#ADD8E6")
+                on_press: root.get_help()
+        TextInput:
+            id:file_content
+            size_hint:None , None
+            size:root.width, 400
+            font_size:15
+            markup:True
+            color:utils.get_color_from_hex("#009dFF")
+
+        FloatLayout:
+            size_hint:None , None
+            size:root.width, "100dp"
+            canvas:
+                Color:
+                    rgba: utils.get_color_from_hex("#ADD8E6")
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            MDIconButton:
+                icon:"file-document"
+                pos_hint:{"x":.02, "y":.15}
+                on_press: root.open_file()
+            MDIconButton:
+                icon: "content-save"
+                pos_hint:{"x":.12, "y":.15}
+                md_bg_color:utils.get_color_from_hex("#ADD8E6")
+                on_press: root.save_file()
+            MDIconButton:
+                icon:"close-thick"
+                pos_hint:{"x":.22, "y":.15}
+                md_bg_color:utils.get_color_from_hex("#ADD8E6")
+                on_press: root.close_file()
+            MDIconButton:
+                pos_hint:{"x":.32, "y":.15}
+                icon:"format-font"
+                on_press: root.get_font_size()
+            MDIconButton:
+                pos_hint:{"x":.42, "y":.15}
+                icon:"hexadecimal"
+                on_press: root.string_to_hex()
+            MDIconButton:
+                pos_hint:{"x":.52, "y":.15}
+                icon:"book-settings"
+                on_press: root.goto_settings()
+            MDIconButton:
+                pos_hint:{"x":.62, "y":.15}
+                icon:"help"
+                on_press: root.get_help()
+
+<WelcomePage>:
+    GridLayout:
+        size: root.size
+        cols:1
+        Button:
+            background_color:utils.get_color_from_hex("#ADD8E6")
+        Label:
+            size_hint:None , None
+            size:root.width, 400
+            font_size:100
+            text: "[b][i]Flash Pad[/i][/b]"
+            markup:True
+            color:utils.get_color_from_hex("#009dFF")
+
+        Button:
+            background_color:utils.get_color_from_hex("#ADD8E6")
+
+
+
