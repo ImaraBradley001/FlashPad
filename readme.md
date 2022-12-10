@@ -20,7 +20,7 @@ FlashPad is a simple text editor that can be used to read and write to text file
 ```
 git clone https://github.com/ImaraBradley001/FlashPad.git
 cd FlashPad
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 * Or simply download the latest release binary
 
