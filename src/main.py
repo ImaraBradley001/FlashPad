@@ -20,6 +20,7 @@ from kivy.uix.popup import Popup
 from kivy.uix.dropdown import DropDown
 from kivy.uix.textinput import TextInput
 from tkinter import Tk, filedialog
+from kivy.core.window import Window
 import binascii
 
 c = 0
@@ -148,8 +149,8 @@ class MainPage(Screen):
 class MainApp(MDApp):
     def build(self):
         from kivy.core.window import Window
-        Window.size = (800, 600)
-        Window.minimum_width, Window.minimum_height = Window.size
+        Window.borderless = True
+        Window.maximum_size = (800, 600)
         self.sm = ScreenManager()
         self.sm.add_widget(WelcomePage(name='welcome_page'))
         self.sm.add_widget(MainPage(name='main_page'))
